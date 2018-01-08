@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extend CI_Controller {
+class HomeController extends CI_Controller {
 	public function index(){
 		$this->load->model('HomeModel');
 		$data['records'] = $this->HomeModel->getData();
