@@ -19,7 +19,7 @@
 			
 		if(isAction == "true")
 		{
-			window.location="<?php echo base_url();?>index.php/users/"+act+"/"+gotoid;
+			window.location="<?php echo base_url();?>index.php/HomeController/"+act+"/"+gotoid;
 		}	
 		}
 

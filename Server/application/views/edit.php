@@ -12,7 +12,7 @@
 
 <body>
 
-<form method="post" action="<?php echo base_url();?>index.php/users/update">
+<form method="post" action="<?php echo base_url();?>index.php/HomeController/update">
 <?php
 extract($user);
 ?>
