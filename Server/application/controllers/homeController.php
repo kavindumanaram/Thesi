@@ -1,10 +1,17 @@
 <?php
 
 class HomeController extends CI_Controller {
-	public function index(){
-		$this->load->model('HomeModel');
-		$data['records'] = $this->HomeModel->getData();
 
+	function __construct()
+	{
+	parent::__construct();
+	#$this->load->helper('url');
+	$this->load->model('HomeModel');
+	}
+
+	public function index()
+	{
+		$data['records'] = $this->HomeModel->get_all_users();
 		$this->load->view('HomeView', $data);
 	}
 }
