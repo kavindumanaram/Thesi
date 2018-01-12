@@ -35,6 +35,13 @@ class HomeModel extends CI_Model{
 		$this->db->where('users.id', $id);
 		return $this->db->delete('users');
 	}
+
+	public function search_by_keyword($keyword)
+	{
+		$this->db->like('name', $keyword);
+		$query = $this->db->get('users');
+		return $query->result();
+	}
 }
 
 ?>

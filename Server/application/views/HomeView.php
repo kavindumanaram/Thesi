@@ -30,6 +30,8 @@
 
 <h2> </h2>
 
+ <a href="<?php echo base_url();?>index.php/HomeController/navigate_to_search/search">Search User</a>
+
 <table width="600" border="1" cellpadding="5">
 
 <tr>

@@ -57,6 +57,26 @@ class HomeController extends CI_Controller {
 		$this->HomeModel->delete_a_user($id);
 		$this->index();
 	}
+
+	public function navigate_to_search()
+	{
+		$page = $this->uri->segment(3); //not a good practice change
+		if($page == 'HomeView')
+		{
+			$this->index();
+		}
+		if($page == 'search')
+		{
+			$this->search();
+		}
+	}
+
+	public function search()
+	{
+		$search_text = $this->input->POST('keyword');
+		$data['results'] = $this->HomeModel->search_by_keyword($search_text);
+		$this->load->view('search', $data);
+	}
 }
 
 ?>
