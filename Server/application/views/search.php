@@ -3,6 +3,7 @@
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" />
 </form>
+<h3>pS : <b>Seach Emails Only</b></h3>
 
 <?php 
 foreach($results as $row)
