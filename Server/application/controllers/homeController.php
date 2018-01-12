@@ -9,14 +9,13 @@ class homeController extends CI_Controller {
 		parent::__construct();
 		// give default value
 		$this->name="ABC";
-		$this->color="red";
+		$this->color="black";
 	}
 
-	//http://localhost:8012/thesi/Server/index.php/HomeController/you
-	public function you(){
-		$data['name']=$this->name;
+	//http://localhost:8012/thesi/Server/index.php/HomeController/you/firstname/lastname
+	public function you($firstname='', $lastname=''){
+		$data['name']=($firstname)?$firstname.' '.$lastname:$this->name;
 		$data['color']=$this->color;
-
 		$this->load->view('HomeView', $data);
 	}
 }
