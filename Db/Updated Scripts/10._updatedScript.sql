@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
---Create User Table
+-- Create User Table
 -------------------------------------------------------------------------------
 CREATE TABLE `thesidevelopment`.`user`(
     `Userid` INT NOT NULL AUTO_INCREMENT,
@@ -11,7 +11,6 @@ CREATE TABLE `thesidevelopment`.`user`(
 ) ENGINE = InnoDB;
 
 -------------------------------------------------------------------------------
---Insert Dummy data User Table
+-- Insert Dummy data User Table
 -------------------------------------------------------------------------------
 INSERT INTO `user`(`FirstName`, `LastName`) VALUES ('Kavindu','Manaram')
-INSERT INTO `user`(`FirstName`, `LastName`) VALUES ('Ishanka','Madhuranga')
