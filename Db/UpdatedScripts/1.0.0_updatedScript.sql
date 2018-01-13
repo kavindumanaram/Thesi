@@ -1,3 +1,7 @@
+CREATE DATABASE thesidevelopment;
+
+---------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS `users` (
 
 `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -29,3 +33,6 @@ INSERT INTO `users` (`id`, `name`, `email`, `address`, `mobile`) VALUES
 (10, 'Salim Hossain', 'salimhossain@gmail.com', 'Gazipur-1700, Dhaka, Bangladesh.', '01717552181'),
 
 (13, 'Galib', 'g@lib.com', 'Dhaka,Bangladesh', '987979');
+
+---------------------------------------------------------------
+
