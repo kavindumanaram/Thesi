@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8012/ppp/Server/';
+$config['base_url'] = 'http://localhost:8012/Thesi/Server/';
 
 /*
 |--------------------------------------------------------------------------
